@@ -1,0 +1,85 @@
+.selected-inner {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: .4em;
+    margin-top: .4em;
+}
+
+.skiller {
+    font-family: Gara;
+    margin-top: 3em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.lang {
+    color:#EF860B;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.prom-lang {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5em;
+    margin-right: 5em;
+}
+
+.prom-lang li {
+    color: #fff;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.other-tools {
+    color:#EF860B;
+    margin: 2em 0 1em 0;
+    font-weight: 600;
+}
+
+.tools-container {
+    color: #fff;
+    margin-bottom: .5em;
+    list-style: none;
+    font-weight: 300;
+}
+
+.date-header > div {
+    display: flex;
+    color: #fff;
+    align-items: baseline;
+}
+
+.date-header p {
+    color: #ffffff;
+    max-width: 36.7vw;
+    font-weight: 400;
+}
+
+.year {
+    color: #fff;
+}
+
+.responsible {
+    color: #fff;
+    margin: 2em 0em 2em 0em;
+}
+
+.res-list li {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    list-style: none;
+    padding-bottom: .7em;
+    font-weight: 300;
+}
+
+.exp-container {
+    margin: 0em 0em 7em 0em;
+    
+}

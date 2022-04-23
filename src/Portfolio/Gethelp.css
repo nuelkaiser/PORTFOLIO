@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Cool-font';
+    src: url('../Fonts/Recoleta-RegularDEMO.otf');
+}
+
+@font-face {
+    font-family: 'Inter-font';
+    src: url('../Fonts/Inter.ttf');
+}
+
+.nav-gtp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 30px;
+}
+
+.gtp-container {
+    position: relative;
+}
+
+.nav-gtp button, 
+.gtp-help button,
+.get-help-container button {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    background: #4D2161;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-features ul {
+    margin-left: 10em;
+}
+
+.nav-features ul {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.nav-features li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-color {
+    display: flex;
+    gap: 1.5em;
+    justify-items: center;
+    margin-left: 0.6em;
+    margin-bottom: 0.1em;
+}
+
+.get-help-container  {
+    display: flex;
+    margin: 100px 80px 0px 120px;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.get-help-container div h1 {
+    font-family: 'Cool-font';
+    font-size: 4rem;
+    width: 125%;
+    margin-bottom: .3em;
+}
+
+
+.get-help-container div p {
+    font-family: 'Inter-font';
+    text-align: left;
+    width: 90%;
+}
+
+.gtp-bck {
+    margin-top: -8em;
+}
+
+.gtp-help {
+    margin-top: 4em;
+}
+
+.gtp-help {
+    font-family: 'Inter-font';
+}
+
+.gtp-gtp {
+    position: relative;
+}
+
+.comment {
+    position: absolute;
+}
+
+.els {
+   top: -4.3em;
+   right: 0em;
+   z-index: 1;
+}
+
+.first-billy {
+    bottom: 8em;
+    left: -7em;
+    z-index: 1;
+}
+
+.second-billy {
+    bottom: -1em;
+    right: -1em;
+    z-index: 1;
+}
+
+.grey {
+    position: absolute;
+    top: 75.7%;
+}
+
+.purple-1 {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    z-index: 11;
+}
+
+.purple-2 {
+    position: absolute;
+    left: 7.7%;
+    bottom: 7%;
+    z-index: 11;
+}
+
+.purple-3 {
+    position: absolute;
+    bottom: 3%;
+    left: 27.7%;
+    transform: scale(.4);
+    z-index: 11;
+}
+
+.orange-1 {
+    position: absolute;
+    top: 28%;
+    left: 33.9%;
+    z-index: 11;
+}
+
+.orange-2 {
+    position: absolute;
+    top: 22%;
+    right: 9.4%;
+    z-index: 11;
+}
+
+.orange-3 {
+    position: absolute;
+    left: 33%;
+    bottom: 25%;
+    transform: scale(.7);
+}
+
+.orange-4 {
+    position: absolute;
+    right: 20%;
+    bottom: 36%;
+    z-index: 11;
+}
+
+.orange-5 {
+    position: absolute;
+    bottom: 3%;
+    right: 38%;
+    z-index: 11;
+}
+
+@media (max-width: 1024px) {
+
+    .gtp-container {
+        overflow: hidden;
+    }
+
+    .get-help-container {
+        margin: 100px 80px 0px 60px;
+        gap: 10em;
+    }
+
+    .get-help-container div h1 {
+        font-size: 3em;
+        width: 295%;
+    }
+
+    .get-help-container div p {
+        width: 195%;
+    }
+
+    .gtp-bck {
+        transform: scale(.8);
+    }
+}

@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Vultures';
+    src: url('../Fonts/Taken\ by\ Vultures\ Demo.otf');
+}
+
+
+
+.work-container {
+    background: linear-gradient(180deg, #220522 -9.31%, #0E171E 54.98%);
+    padding-top: 50px;
+}
+
+.work-work h2 {
+    font-family: 'Vultures';
+    color: #fff;
+    font-weight: 200;
+    word-spacing: 6px;
+    font-size: 32px;
+}
+
+.work-work {
+    width: 80%;
+    margin: auto;
+}
+
+.btn-work {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+ }
+ 
+ .btn-work:hover {
+    background: transparent;
+    color: #fff;
+    transition: ease-in 700ms;
+    border: 2px solid #fff;
+}
+
+.inner-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.projects {
+    margin-top: 1em;
+}
+
+.projects h3,
+.projects-2 h3 {
+    color: #fff;
+    font-family: 'Gara';
+}
+
+.selected,
+.selected-2 {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: .4em;
+}
+
+.projects h3 {
+    font-size: 30px;
+}
+
+.selected-2 p {
+    font-size: 14px;
+}
+
+.inner-work-2 {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.proj-cont {
+    padding-bottom: 7em;
+}
+
+.wite {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}

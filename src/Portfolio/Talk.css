@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.talk-container {
+    background: linear-gradient(180deg, #220522 -9.31%, #0E171E 54.98%);
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.talk-inner {
+    width: 80%;
+    margin: auto;
+}
+
+
+.inner-talkset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.inner-talkset h2 {
+    font-family: 'Vultures';
+    color: #fff;
+    font-weight: 200;
+    word-spacing: 6px;
+    font-size: 32px;
+}
+
+
+.form-container {
+    margin-top: 3em;
+}
+
+.form-container h1 {
+    font-family: 'Gara';
+}
+
+.form-container h1,
+.form-container span p {
+    color: #fff;
+}
+
+.form-container span {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+form {
+    margin-top: 5em;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.name-text,
+.word-text {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 20px 15px;
+    border-radius: 4px;
+}
+
+.name-text::placeholder,
+.word-text::placeholder {
+    color: #fff;
+}
+
+.word-text {
+    resize: none;
+    height: 30vh;
+}

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.skillset-container {
+    background: linear-gradient(180deg, #220522 -9.31%, #0E171E 54.98%);
+    padding-top: 50px;
+}
+
+.inner-inner {
+    width: 80%;
+    margin: auto;
+}
+
+
+.inner-skillset h2 {
+    font-family: 'Vultures';
+    color: #fff;
+    font-weight: 200;
+    word-spacing: 6px;
+    font-size: 32px;
+}
+
+
+
+.btn-innerskill {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+ }
+ 
+ .btn-work:hover {
+    background: transparent;
+    color: #fff;
+    transition: ease-in 700ms;
+    border: 2px solid #fff;
+}
+
+.inner-skillset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.exper-bar {
+    position: sticky;
+    top: 7%;
+    height: 100vh;
+}
+
+.exper-bar h1 {
+    font-family: 'Gara';
+    color: #fff;
+}
+
+.exper-bar-container {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+}
+
+
+.detailed-bar {
+    margin-left: 5em;
+    margin-bottom: 4em;
+    border-left: 1px solid #fff;
+    padding-left: 4em;
+    position: relative;
+}
+
+.white-1,
+.white-2,
+.white-3,
+.white-4 {
+    position: absolute;
+    right: 97.7%;
+}
+
+.white-1 {
+    top: 0%;
+}
+
+.white-2 {
+    top: 25%;
+}
+
+.white-3 {
+    top: 50%;
+}
+
+.white-4 {
+    top: 75%;
+}
