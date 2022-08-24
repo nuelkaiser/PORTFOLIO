@@ -4,3 +4,15 @@
   box-sizing: border-box;
 }
 
+
+
+.app-cont {
+  width: 100%;
+}
+
+
+@media (max-width: 425px) {
+  .app-cont {
+    overflow-x: hidden;
+  }
+}

@@ -68,3 +68,74 @@
     right: 360px;
     top: 380px;
 }
+
+@media (max-width: 1024px) {
+    .my-name {
+        font-size: 41px;
+        padding-left: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-intro {
+        padding: 60px 70px;
+    }
+
+    .my-name {
+        font-size: 30px;
+    }
+
+    .star {
+        right: 22px
+    }
+    .orange-rec {
+        right: 170px;
+    }
+}
+
+@media (max-width: 425px) {
+    .my-name {
+        font-size: 16px;
+        padding-left: 14px;
+        margin-top: 5em;
+    }
+
+    .star {
+        right: 30px;
+        width: 80px
+    }
+
+    .orange-rec {
+        width: 60px;
+        top: 22%;
+        right: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+ .my-intro {
+    padding: 60px 40px;
+ }   
+
+ .star {
+    right: 0px;
+ }
+
+ .white-sec {
+    right: 301px;
+ }
+}
+
+@media (max-width: 320px) {
+    .my-intro {
+        padding: 60px 30px;
+    }
+
+    .star {
+        right: -9px;
+    }
+
+    .white-sec {
+        right: 245px;
+    }
+}

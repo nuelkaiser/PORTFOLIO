@@ -23,12 +23,14 @@
 }
 
 
-.pro h3 {
+.pro h3,
+.inverse-pro h3 {
     margin-top: 1.4em;
     margin-bottom: 1em;
 }
 
-.pro p {
+.pro p,
+.inverse-pro p {
     width: 100%;
 }
 
@@ -52,3 +54,52 @@
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .pro > img,
+    .inverse-pro > img {
+        width: 335px;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .pro p,
+    .inverse-pro p {
+        font-size: 14px;
+    }
+
+    .pro > img,
+    .inverse-pro > img {
+        width: 290px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .pro,
+    .inverse-pro {
+        flex-direction: column;
+    }
+
+    .pro > div,
+    .inverse-pro > div {
+        text-align: center;
+    }
+
+    .proj-btn-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .pro p,
+    .inverse-pro p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .pro > img,
+    .inverse-pro > img {
+        width: 260px;
+    }
+}

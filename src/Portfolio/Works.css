@@ -35,9 +35,9 @@
     border-radius: 7px;
     outline: none;
     cursor: pointer;
- }
- 
- .btn-work:hover {
+}
+
+.btn-work:hover {
     background: transparent;
     color: #fff;
     transition: ease-in 700ms;
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .projects {
     margin-top: 1em;
@@ -91,4 +91,53 @@
     position: absolute;
     top: 20%;
     left: 40%;
+}
+
+@media (max-width: 425px) {
+    .wite {
+        top: 32%;
+        left: 68%;
+        width: 30px;
+    }
+
+    .projects {
+        margin-top: 0em;
+    }
+
+    .inner-work-2 {
+        align-items: flex-end;
+        gap: 1em;
+    }
+
+    .work-work {
+        width: 85%;
+    }
+}
+
+@media (max-width: 375px) {
+    .wite {
+        left: 70%
+    }
+
+    .selected p {
+        font-size: 13px;
+    }
+
+    .selected-2 p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .projects h3 {
+        font-size: 23px;
+    }
+
+    .selected-2 p {
+        font-size: 10px;
+    }
+
+    .selected p {
+        font-size: 11px;
+    }
 }

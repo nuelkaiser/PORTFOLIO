@@ -83,3 +83,37 @@
     margin: 0em 0em 7em 0em;
     
 }
+
+@media (max-width: 1024px) {
+    .prom-lang {
+        margin-right: 0em;
+    }
+
+    .date-header p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .date-header p {
+        max-width: initial;
+    }
+}
+
+@media (max-width: 320px) {
+    .prom-lang li {
+        font-size: 12px;
+    }
+
+    .date-header p {
+        font-size: 11px;
+    }
+
+    .other-tools {
+        font-size: 14px;
+    }
+
+    .year {
+        font-size: 12px;
+    }
+}

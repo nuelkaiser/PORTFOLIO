@@ -9,6 +9,7 @@
 .skillset-container {
     background: linear-gradient(180deg, #220522 -9.31%, #0E171E 54.98%);
     padding-top: 50px;
+    width: 100%;
 }
 
 .inner-inner {
@@ -96,4 +97,38 @@
 
 .white-4 {
     top: 75%;
+}
+
+@media (max-width: 768px) {
+    .detailed-bar {
+        margin-left: 1em;
+    }
+
+    .exper-bar-container {
+        grid-template-columns: auto auto;
+    }
+
+    .white-1, .white-2, .white-3, .white-4 {
+        position: absolute;
+        right: 95.9%;
+    }
+}
+
+@media (max-width: 425px) {
+    .exper-bar-container {
+        grid-template-columns: auto;
+    }
+
+
+    .detailed-bar {
+        margin-left: 0px;
+        padding-left: 2em;
+    }
+}
+
+@media (max-width: 320px) {
+    .white-1, .white-2, .white-3, .white-4 {
+        position: absolute;
+        right: 94.4%;
+    }
 }
