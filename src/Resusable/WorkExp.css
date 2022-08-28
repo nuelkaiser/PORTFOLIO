@@ -21,9 +21,8 @@
 
 .prom-lang {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
-    justify-content: space-evenly;
     gap: .5em;
     margin-right: 5em;
 }

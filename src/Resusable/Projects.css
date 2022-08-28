@@ -54,6 +54,11 @@
     cursor: pointer;
 }
 
+.proj-btn-container button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media (max-width: 1024px) {
     .pro > img,
     .inverse-pro > img {

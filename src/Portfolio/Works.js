@@ -11,28 +11,50 @@ import './Works.css';
 function Works() {
 
     const details = [
+
+        {
+            id: 0,
+            img:  Proi ,
+            text: `An aplication that fetches data of a list of countries and renders out the list with thier distinctive details,
+                   enables you to search for different countries, view them and filter them by thier regions using a drop down menu.
+                   Also implemented with a light theme and dark theme feature.`,
+           title: 'Country API',
+            tech: 'Technologies',
+            github:  Github ,
+            chain:  Chain,
+            p:'REACT JS, CSS and Material UI',
+            link: `https://github.com/nuelkaiser/COUNTRY-API-PROJECT`,
+            view:  `https://countrynew.netlify.app/`
+        },
+
         {
             id: 1,
             img:  Proi ,
-            text: `I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar. 
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.`,
-           title: 'People Management Application',
+            text: `A todo list application that enables you to create and delete todos, 
+                   tick the completeed todos and filter based on completed 
+                   and uncompleted todos. Also implemented with a light theme and dark theme feature.`,
+           title: 'TODO',
             tech: 'Technologies',
             github:  Github ,
-            chain:  Chain 
+            chain:  Chain,
+            p:'HTML, CSS and JAVASCRIPT',
+            link: `https://github.com/nuelkaiser/Todo-App`,
+            view:  `https://kaisertodo.netlify.app/`
         },
+
 
         {
             id: 2,
             img:  Proi ,
-            text: `I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar. 
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.`,
-           title: 'People Management Application',
+            text: `A static landing Page for a next generation digital banking application (Easy Bank), 
+                   built to perfection, fit mobile screen sizes, and very responsive.`,
+           title: 'Eazy Bank',
             tech: 'Technologies',
-            github:  Github ,
-            chain:  Chain 
+            github:  Github,
+            chain:  Chain,
+            p:'REACT JS  and CSS',
+            link: `https://github.com/nuelkaiser/EasyBank`,
+            view:  `https://nuelkaiser.github.io/EasyBank/`
         },
 
         {
@@ -41,23 +63,17 @@ function Works() {
             text: `I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar. 
                    I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.
                    I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.`,
-           title: 'People Management Application',
+           title: 'MANAGE',
             tech: 'Technologies',
             github:  Github ,
-            chain:  Chain 
+            chain:  Chain ,
+            p:'REACT JS and CSS',
+            link: `https://github.com/nuelkaiser/Manage-Responsive-Website`,
+            view:  `https://man10.netlify.app/`
         },
 
-        {
-            id: 4,
-            img:  Proi ,
-            text: `I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar. 
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.
-                   I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoar.`,
-           title: 'People Management Application',
-            tech: 'Technologies',
-            github:  Github ,
-            chain:  Chain 
-        }
+       
+
 
     ]
 
@@ -104,7 +120,10 @@ function Works() {
                            tech={i.tech}
                            github={i.github}
                            chain={i.chain}
-                       />
+                           p={i.p}
+                           link={i.link}    
+                           view={i.view}
+                           />
                        )
                    }
                </div>

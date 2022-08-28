@@ -1,7 +1,7 @@
 import React from 'react';
 import './WorkExp.css'
 
-const WorkExp = ({Orange}) => {
+const WorkExp = ({ Orange, work }) => {
     return (
         <div className='exp-container'>
             <div className='selected-inner'>
@@ -12,33 +12,41 @@ const WorkExp = ({Orange}) => {
 
             <div className='date-header'>
                 <div>
-                    <h4 className='other-tools'>ABC International -</h4>
-                    <h4 className='year`'>March 2020</h4>
+                    <h4 className='other-tools'>{work.where} -</h4>
+                    <h4 className='year`'>{work.year}</h4>
                 </div>
 
                 <p>
-                    I interned at ABC international is a company that lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempoar. I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempoar.I am Immanuel Majekodunmi a lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempoar.
+                    {work.details}
                 </p>
 
                 <h4 className='responsible'>Responsibilities</h4>
                 <ul className='res-list'>
-                    <li>
-                        <img src={Orange} alt='Orange' />
-                        <p>Creating and converting UI designs to webpages using REACTjs</p>
-                    </li>
+                    {
+                        work.role.map(
+                            (i) =>
+                                <div key={i}>
+                                    <li>
+                                        <img src={Orange} alt='Orange' />
+                                        <p>{i.first}</p>
+                                    </li>
 
-                    <li>
-                        <img src={Orange} alt='Orange' />
-                        <p>Jira Task Management Tool</p>
-                    </li>
+                                    <li>
+                                        <img src={Orange} alt='Orange' />
+                                        <p>{i.second}</p>
+                                    </li>
 
-                    <li>
-                        <img src={Orange} alt='Orange' />
-                        <p>Trello Task Management Tool</p>
-                    </li>
+                                    {
+                                        i.third ? 
+                                        <li>
+                                            <img src={Orange} alt='Orange' />
+                                            <p>{i.third}</p>
+                                        </li> : ''
+                                    }
+                                </div>
+
+                        )
+                    }
                 </ul>
             </div>
         </div>

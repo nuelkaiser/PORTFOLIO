@@ -16,9 +16,9 @@ function Me() {
                     <div className='proper-inner'>
                         <h1>
                             I am Immanuel Majekodunmi <br />
-                            a lorem ipsum dolor sit amet, <br />
-                            consectetur adipiscing elit, <br />
-                            sed do eiusmod tempor.
+                            a Frontend Developer, <br />
+                            Tech Enthusisat, <br />
+                            and an Anime Lover.
                         </h1>
                         <img className='dashed' src={Dashed} alt='Dashed Line' />
 
@@ -72,8 +72,8 @@ function Me() {
                     </li>
                 </ul>
             </div>
-            <img  className='org-1' src={Orange} alt='Orange Dot'/>
-            <img  className='org-2' src={Orange} alt='Orange Dot'/>
+            <img className='org-1' src={Orange} alt='Orange Dot' />
+            <img className='org-2' src={Orange} alt='Orange Dot' />
         </div>
     )
 }
