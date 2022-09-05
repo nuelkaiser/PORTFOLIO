@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
 import Dashed from '../Images/Dashed-Line.svg';
 import Orange from '../Images/Orange-GTP.svg';
 import './Me.css';
+import { Link } from 'react-scroll';
 
 function Me() {
     return (
@@ -24,18 +24,18 @@ function Me() {
 
                         <div className='link-deal'>
                             <div className='btns-container'>
-                                <button className='btn-1'>
+                                <Link className='btn-1' to="talk" spy={true} smooth={true} offset={50} duration={500}>
                                     Let's Talk
-                                </button>
+                                </Link>
 
                                 <button className='btn-2'>
                                     My  Resume
                                 </button>
                             </div>
 
-                            <Link to='/' className='link'>
+                            <a  href='/' className='link'>
                                 majekodunmiimmanuel9@gmail.com
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,6 @@ function Me() {
                         </a>
                     </li>
 
-                    <li>
-                        <a href='/'>
-                            Behance
-                        </a>
-                    </li>
                 </ul>
             </div>
             <img className='org-1' src={Orange} alt='Orange Dot' />

@@ -47,10 +47,6 @@ function Skillset() {
                     <h2>
                         Immanuel Majekodunmi
                     </h2>
-
-                    <button className='btn-1'>
-                        Let's Talk
-                    </button>
                 </div>
 
                 <div className='exper-bar-container'>

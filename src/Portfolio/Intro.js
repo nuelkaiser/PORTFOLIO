@@ -4,8 +4,17 @@ import WhiteSec from '../Images/White-Sec.svg';
 import OrangeRec from '../Images/Orange-Rec.svg';
 import OrangeStar from '../Images/Orange-Star.svg';
 import './Intro.css';
+import { useSpring, animated } from 'react-spring'
 
 function Intro() {
+ 
+    const props = useSpring({ to: { opacity: 1, }, from: { opacity: 0, }, delay: 1000 });
+
+
+    
+
+
+    
   return (
     <div className='my-intro'>
         <h2>
@@ -13,9 +22,9 @@ function Intro() {
         </h2>
 
         <div className='my-name'>
-            <h1>
+            <animated.h1 style={props}>
                 Immanuel <br /> Majekodunmi
-            </h1>
+            </animated.h1>
         </div>
 
         <div>

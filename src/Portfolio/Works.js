@@ -15,7 +15,7 @@ function Works() {
         {
             id: 0,
             img:  Proi ,
-            text: `An aplication that fetches data of a list of countries and renders out the list with thier distinctive details,
+            text: `An application that fetches data of a list of countries and renders out the list with thier distinctive details,
                    enables you to search for different countries, view them and filter them by thier regions using a drop down menu.
                    Also implemented with a light theme and dark theme feature.`,
            title: 'Country API',

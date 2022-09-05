@@ -84,6 +84,12 @@ form {
 
 .abs {
     position: absolute;
+    
+}
+
+.abs:hover {
+    transform: scale(1.5);
+    transition: cubic-bezier(0.23, 1, 0.320, 1),   2400ms;
 }
 
 .big {

@@ -13,7 +13,7 @@ function App() {
 
   const handleLoading = () => setTimeout(() => {
     setLoaded(false);
-  }, 3000);
+  }, 1500);
 
   useEffect(() => {
     window.addEventListener("load", handleLoading);

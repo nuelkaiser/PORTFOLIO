@@ -4,20 +4,31 @@ import Tri from '../Images/Orange-Tri.svg';
 import White from '../Images/White-Sec.svg';
 import Rec from '../Images/White-Rec.svg';
 import './Talk.css';
+import { useState } from 'react';
 
 const Talk = () => {
+
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('')
+
+    const submit = (e) => {
+        e.preventDefault()
+    }
+
+    const clicked = () => {
+        setName('');
+        setMessage('')
+        console.log(name, message)
+    }
+
     return (
-        <div className='talk-container'>
+        <div className='talk-container' id="talk">
             <div className='talk-inner'>
         
                 <div className='inner-talkset'>
                     <h2>
                         Immanuel Majekodunmi
                     </h2>
-
-                    <button className='btn-1'>
-                        Let's Talk
-                    </button>
                 </div>
 
                 <div className='form-container'>
@@ -28,13 +39,13 @@ const Talk = () => {
                     </span>
 
                   <div>
-                  <form>
-                        <input className='name-text' placeholder='Name' type='Name' />
-                        <textarea className='word-text' placeholder='Message' type='text' >
+                  <form onSubmit={submit}>
+                        <input className='name-text' placeholder='Name' type='Name' value={name} onChange={(e) => setName(e.target.value)} />
+                        <textarea className='word-text' placeholder='Message' type='text' value={message}  onChange={(e) => setMessage(e.target.value)}>
                        </textarea>
                     </form>
 
-                    <button className='btn-1 send'>Send</button>
+                    <button onClick={clicked} className='btn-send send'>Send</button>
                   </div>
 
                 </div>

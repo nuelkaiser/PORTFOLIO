@@ -82,20 +82,33 @@
     cursor: pointer;
 }
 
+
+
 .btn-1 {
-   border: none;
    padding: 13px 20px;
    border-radius: 7px;
    outline: none;
    cursor: pointer;
+   border: 2px solid #fff;
+   color: #fff;
 }
 
-.btn-1:hover {
+.btn-send {
+    padding: 13px 20px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.btn-1:hover,
+.btn-send:hover {
     background: transparent;
     color: #fff;
     transition: ease-in 700ms;
     border: 2px solid #fff;
 }
+
 
 .btn-2 {
     color: #fff;
