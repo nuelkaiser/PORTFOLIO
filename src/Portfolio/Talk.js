@@ -27,7 +27,7 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 5,
-                    delay: 50,
+                    delay: .7,
                 },
                 600,
               );
@@ -38,7 +38,7 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 5,
-                    delay: 60,
+                    delay: .6,
                 },
                 700,
               );
@@ -48,7 +48,7 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 3,
-                    delay: 100,
+                    delay: .7,
                 },
                 800,
               );
@@ -58,7 +58,7 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 3,
-                    delay: 150,
+                    delay: .5,
                 },
                 900,
               );
@@ -68,7 +68,7 @@ const Talk = () => {
                 {
                     opacity: 1,
                     y: 6,
-                    delay: 110,
+                    delay: .5,
                     ease: 'Power3.ease',
                 },
                 1000,
