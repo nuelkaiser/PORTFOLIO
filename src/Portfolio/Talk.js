@@ -16,7 +16,7 @@ const Talk = () => {
                 // yes, we can add it to an entire timeline!
                 scrollTrigger: {
                   trigger: ".talk-container",
-                  start: "bottom bottom", 
+                  start: "top top", 
                   end:"+=800",
                   scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 }
@@ -27,9 +27,9 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 5,
-                    delay: .7,
+                    delay: 50,
                 },
-                .6,
+                .9,
               );
 
 
@@ -38,9 +38,9 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 5,
-                    delay: .6,
+                    delay: 60,
                 },
-                .7,
+                .9,
               );
 
               talk.to(
@@ -48,9 +48,9 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 3,
-                    delay: .7,
+                    delay: 90,
                 },
-                .8,
+                800,
               );
 
               talk.to(
@@ -58,9 +58,9 @@ const Talk = () => {
                 {
                     opacity: 1,
                     x: 3,
-                    delay: .5,
+                    delay: 150,
                 },
-                .9,
+                800,
               );
 
               talk.to(
@@ -68,32 +68,32 @@ const Talk = () => {
                 {
                     opacity: 1,
                     y: 6,
-                    delay: .5,
+                    delay: 110,
                     ease: 'Power3.ease',
                 },
-                .1,
+                .20,
               );
 
               talk.to(
                 '.big, .tri-1, .tri-2',
+                200,
                 {
                     opacity: 1,
                     ease: 'Power3.ease',
                     delay: .10,
                     rotate: 360
                 },
-                .2,
               );
 
               talk.to(
                 '.ci-1, .ci-2',
+                .20,
                 {
                     opacity: 1,
                     ease: 'Power3.ease',
                     delay: .5,
                     rotateX: 360
                 },
-                .20,
               );
         }, []
     )
