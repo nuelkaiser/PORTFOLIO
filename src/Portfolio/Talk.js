@@ -29,7 +29,7 @@ const Talk = () => {
                     x: 5,
                     delay: .7,
                 },
-                6,
+                .6,
               );
 
 
@@ -40,7 +40,7 @@ const Talk = () => {
                     x: 5,
                     delay: .6,
                 },
-                7,
+                .7,
               );
 
               talk.to(
@@ -50,7 +50,7 @@ const Talk = () => {
                     x: 3,
                     delay: .7,
                 },
-                8,
+                .8,
               );
 
               talk.to(
@@ -60,7 +60,7 @@ const Talk = () => {
                     x: 3,
                     delay: .5,
                 },
-                9,
+                .9,
               );
 
               talk.to(
@@ -71,29 +71,29 @@ const Talk = () => {
                     delay: .5,
                     ease: 'Power3.ease',
                 },
-                1,
+                .1,
               );
 
               talk.to(
                 '.big, .tri-1, .tri-2',
-                2,
                 {
                     opacity: 1,
                     ease: 'Power3.ease',
                     delay: .10,
                     rotate: 360
                 },
+                .2,
               );
 
               talk.to(
                 '.ci-1, .ci-2',
-                .20,
                 {
                     opacity: 1,
                     ease: 'Power3.ease',
                     delay: .5,
                     rotateX: 360
                 },
+                .20,
               );
         }, []
     )
