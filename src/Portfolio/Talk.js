@@ -16,7 +16,7 @@ const Talk = () => {
                 // yes, we can add it to an entire timeline!
                 scrollTrigger: {
                   trigger: ".talk-container",
-                  start: "top top", 
+                  start: "bottom bottom", 
                   end:"+=800",
                   scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 }

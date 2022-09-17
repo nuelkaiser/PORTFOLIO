@@ -26,7 +26,7 @@ function Skillset() {
                 // yes, we can add it to an entire timeline!
                 scrollTrigger: {
                   trigger: ".exper-bar h1",
-                  start: "top top", 
+                  start: "bottom bottom", 
                   end:"+=800",
                   scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 }
@@ -36,7 +36,7 @@ function Skillset() {
                 // yes, we can add it to an entire timeline!
                 scrollTrigger: {
                   trigger: ".other-tools",
-                  start: "top bottom", 
+                  start: "bottom bottom", 
                   end:"+=800",
                   scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 }
