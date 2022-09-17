@@ -29,7 +29,7 @@
 .white-guy {
     width: 100%;
     height: 100vh;
-    background: url('../Images/White-Guy.svg');
+    background: url('../Images/Majeks.jpeg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -54,12 +54,14 @@
     margin-top: 1em;
     text-align: left;
     font-weight: 200;
+    opacity: 0;
 }
 
 .dashed {
     position: absolute;
     right: 120px;
     bottom: 150px;
+    opacity: 0;
 }
 
 .link-deal {
@@ -73,6 +75,7 @@
     display: flex;
     align-items: center;
     gap: 2em;
+    opacity: 0;
 }
 
 .btns-container button {
@@ -103,8 +106,8 @@
 
 .btn-1:hover,
 .btn-send:hover {
-    background: transparent;
-    color: #fff;
+    background: #fff;
+    color: #220522;
     transition: ease-in 700ms;
     border: 2px solid #fff;
 }
@@ -128,6 +131,7 @@
     font-size: 22px;
     cursor: pointer;
     text-decoration: none;
+    opacity: 0;
 }
 
 .my-pro  {
@@ -136,6 +140,7 @@
     justify-content: center;
     gap: 4em;
     margin-top: 3em;
+    opacity: 0;
 }
 
 .my-pro li {

@@ -66,7 +66,9 @@ form {
     padding: 20px 15px;
     border-radius: 4px;
     color: #fff;
+    opacity: 0;
 }
+
 
 .name-text::placeholder,
 .word-text::placeholder {
@@ -80,11 +82,17 @@ form {
 
 .send {
     margin-bottom: 2em;
+    opacity: 0;
+}
+
+.span,
+.form-container h1 {
+    opacity: 0;
 }
 
 .abs {
     position: absolute;
-    
+    opacity: 0;
 }
 
 .abs:hover {

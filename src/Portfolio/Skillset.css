@@ -34,15 +34,8 @@
     border-radius: 7px;
     outline: none;
     cursor: pointer;
- }
- 
- .btn-work:hover {
-    background: transparent;
-    color: #fff;
-    transition: ease-in 700ms;
-    border: 2px solid #fff;
 }
-
+ 
 .inner-skillset {
     display: flex;
     justify-content: space-between;
@@ -60,6 +53,13 @@
     color: #fff;
 }
 
+.exper-bar h1,
+.selected-inner {
+    width: 0%;
+    opacity: 0;
+    transform: scale(0);
+}
+
 .exper-bar-container {
     margin-top: 1em;
     display: grid;
@@ -73,6 +73,7 @@
     border-left: 1px solid #fff;
     padding-left: 4em;
     position: relative;
+    opacity: 0;
 }
 
 .white-1,
@@ -97,6 +98,13 @@
 
 .white-4 {
     top: 75%;
+}
+
+.lang,
+.prom-lang,
+.other-tools,
+.tools-container {
+    opacity: 0;
 }
 
 @media (max-width: 768px) {

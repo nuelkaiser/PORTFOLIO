@@ -1,10 +1,87 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Skillset.css';
 import Orange from '../Images/Orange-GTP.svg';
 import WorkExp from '../Resusable/WorkExp';
 import WhiteFill from '../Images/White-Fill.svg';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Skillset() {
+
+    useEffect(
+        () => {
+
+            let exper = gsap.timeline({
+                // yes, we can add it to an entire timeline!
+                scrollTrigger: {
+                  trigger: ".skillset-container",
+                  start: "top top", 
+                  end:"+=800",
+                  scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                }
+              });
+
+            let tl = gsap.timeline({
+                // yes, we can add it to an entire timeline!
+                scrollTrigger: {
+                  trigger: ".exper-bar h1",
+                  start: "bottom bottom", 
+                  end:"+=800",
+                  scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                }
+              });
+
+              let other = gsap.timeline({
+                // yes, we can add it to an entire timeline!
+                scrollTrigger: {
+                  trigger: ".other-tools",
+                  start: "top bottom", 
+                  end:"+=800",
+                  scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                }
+              });
+
+
+              exper.to(
+                '.exper-bar h1, .selected-inner',
+                {
+                    opacity: 1,
+                    width: "100%",
+                    scale: 1,
+                    delay: 70,
+                }
+              )
+
+              tl.to(
+                '.detailed-bar',
+                {
+                    opacity: 1,
+                    y: 40,
+                    delay: 150,
+                }
+              )
+
+              tl.to(
+                '.lang, .prom-lang',
+                {
+                    opacity: 1,
+                    x: 1,
+                    delay: 80,
+                },
+              )
+
+              other.to(
+                '.other-tools, .tools-container',
+                {
+                    opacity: 1,
+                    x: 1,
+                    delay: 80,
+                },
+              )
+
+        }, []
+    )
 
     const workExper = [
         {

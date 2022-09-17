@@ -30,18 +30,22 @@
 }
 
 .btn-work {
-    border: none;
+    border: 2px solid #fff;
+    color: #fff;
     padding: 13px 20px;
     border-radius: 7px;
     outline: none;
     cursor: pointer;
 }
 
+.btn-work-container {
+    opacity: 0
+}
+
 .btn-work:hover {
-    background: transparent;
-    color: #fff;
+    background: #fff;
     transition: ease-in 700ms;
-    border: 2px solid #fff;
+    color: #220522;
 }
 
 .inner-work {
@@ -52,6 +56,13 @@
 
 .projects {
     margin-top: 1em;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.projects-2 {
+    opacity: 0;
+    transform: scale(0);
 }
 
 .projects h3,

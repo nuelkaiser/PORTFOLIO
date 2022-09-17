@@ -44,29 +44,34 @@
     margin-top: 2em;
     text-align: left;
     font-weight: 200;
+    opacity: 0;
 }
 
 .star {
     position: absolute;
     right: 71px;
+    opacity: 0;
 }
 
 .orange-rec {
     position: absolute;
     right: 300px;
     top: 170px;
+    opacity: 0;
 }
 
 .white-rec {
     position: absolute;
-    bottom: 47px;
-    right: 540px;
+    bottom: 90px;
+    left: 900px;
+    opacity: 0;
 }
 
 .white-sec {
     position: absolute;
     right: 360px;
     top: 380px;
+    opacity: 0;
 }
 
 @media (max-width: 1024px) {
