@@ -17,7 +17,7 @@ const Talk = () => {
                 scrollTrigger: {
                   trigger: ".talk-container",
                   start: "top top", 
-                  end:"+=1000",
+                  end:"+=100",
                   scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 }
               });
