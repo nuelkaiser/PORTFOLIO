@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Orange from '../Images/Orange-GTP.svg';
 import Proi from '../Images/Project-Pics.svg';
 import Chain from '../Images/Chain-Pic.svg';
@@ -7,60 +7,14 @@ import White from '../Images/White-Sec.svg';
 import Projects from '../Resusable/Projects';
 import { Link } from 'react-scroll';
 import './Works.css';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 
 
 function Works() {
-
-    
-   
-    useEffect(
-        () => {
-
-            let tl = gsap.timeline({
-                // yes, we can add it to an entire timeline!
-                scrollTrigger: {
-                  trigger: ".my-pro",
-                  start: "bottom bottom", // when the top of the trigger hits the top of the viewport
-                  end: "+=800", // end after scrolling 500px beyond the start
-                  scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                }
-              });
-        
-
-           tl.to('.btn-work-container',
-                {
-                    y: 9,
-                    opacity: 1,
-                    delay: 2,
-                },
-                5,
-           )
-           .to('.projects',
-                {
-                    x: 4,
-                    opacity: 1,
-                    scale: 1,
-                    delay: 2,
-                },
-           )
-           .to(
-            '.projects-2',
-            {
-               x: -5,
-               opacity: 1,
-                scale: 1
-            }
-           )
-
-        }, []
-    )
-
-
-
 
     const details = [
 
@@ -136,7 +90,7 @@ function Works() {
                         Immanuel Majekodunmi
                     </h2>
 
-                    <div className='btn-work-container'>
+                    <div className='btn-work-container' data-aos="zoom-out-down">
                         <Link className='btn-work' to="talk" spy={true} smooth={true} offset={50} duration={500} >
                             Let's Talk
                         </Link>
@@ -146,14 +100,14 @@ function Works() {
                 <div className='inner-work-2'>
                     <div className='projects'>
                         <h3>My Works</h3>
-                        <div className='selected'>
+                        <div className='selected' data-aos="fade-right">
                             <img src={Orange} alt='Orange Dot' />
                             <p>Selected Projects</p>
                         </div>
                     </div>
                     <div className='projects-2'>
                         <h3>My Experiences</h3>
-                        <div className='selected-2'>
+                        <div className='selected-2' data-aos="fade-left">
                             <img src={Orange} alt='Orange Dot' />
                             <p>Some of my work experiences</p>
                         </div>

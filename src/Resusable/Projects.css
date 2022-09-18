@@ -22,16 +22,6 @@
     margin-top: 5em;
 }
 
-.img {
-    opacity: 0;
-}
-
-.title-header,
-.title-p,
-.tech-header,
-.stack {
-    opacity: 0;
-}
 
 .pro h3,
 .inverse-pro h3 {
@@ -39,17 +29,13 @@
     margin-bottom: 1em;
 }
 
-.pro p,
-.inverse-pro p {
-    width: 100%;
-}
+
 
 .proj-btn-container {
     margin-top: 1.4em;
     display: flex;
     align-items: center;
     gap: 2em;
-    opacity: 0;
 }
 
 .proj-btn-container button {

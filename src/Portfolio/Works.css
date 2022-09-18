@@ -38,10 +38,6 @@
     cursor: pointer;
 }
 
-.btn-work-container {
-    opacity: 0
-}
-
 .btn-work:hover {
     background: #fff;
     transition: ease-in 700ms;
@@ -56,13 +52,6 @@
 
 .projects {
     margin-top: 1em;
-    opacity: 0;
-    transform: scale(0);
-}
-
-.projects-2 {
-    opacity: 0;
-    transform: scale(0);
 }
 
 .projects h3,
