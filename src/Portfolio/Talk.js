@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
+import emailjs from 'emailjs-com';
 import Smiley from '../Images/Smiley.svg';
 import Tri from '../Images/Orange-Tri.svg';
 import White from '../Images/White-Sec.svg';
@@ -10,19 +11,23 @@ AOS.init();
 
 const Talk = () => {
 
-
+    const form = useRef();
 
     const [name, setName] = useState('');
     const [message, setMessage] = useState('')
 
     const submit = (e) => {
-        e.preventDefault()
-    }
 
-    const clicked = () => {
+        emailjs.sendForm('service_tcswgxk', 'template_nm9qjlp', form.current, 'gDwc1b1z9wwHYSl1p')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.preventDefault()
         setName('');
         setMessage('')
-        console.log(name, message)
     }
 
     return (
@@ -43,13 +48,13 @@ const Talk = () => {
                     </span>
 
                   <div>
-                  <form onSubmit={submit}  data-aos="fade-right" data-aos-duration="2500">
-                        <input className='name-text' placeholder='Name' type='Name' value={name} onChange={(e) => setName(e.target.value)} />
-                        <textarea className='word-text' placeholder='Message' type='text' value={message}  onChange={(e) => setMessage(e.target.value)}>
+                  <form onSubmit={submit} ref={form} data-aos="fade-right" data-aos-duration="2500">
+                        <input className='name-text' placeholder='Name' type='Name' value={name} onChange={(e) => setName(e.target.value)} name="name"/>
+                        <textarea className='word-text' placeholder='Message' type='text' value={message}  onChange={(e) => setMessage(e.target.value)} name="message">
                        </textarea>
                     </form>
 
-                    <button  data-aos="fade-down" data-aos-duration="2500" onClick={clicked} className='btn-send send'>Send</button>
+                    <button onClick={submit} className='btn-send send' type="submit" value="Send">Send</button>
                   </div>
 
                 </div>
