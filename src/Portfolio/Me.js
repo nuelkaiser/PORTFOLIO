@@ -117,25 +117,25 @@ function Me() {
 
                 <ul className='my-pro' ref={link => { links = link}}>
                     <li>
-                        <a href='/'>
+                        <a href='https://github.com/nuelkaiser'>
                             Github
                         </a>
                     </li>
 
                     <li>
-                        <a href='/'>
+                        <a href='https://twitter.com/True_majeks'>
                             Twitter
                         </a>
                     </li>
 
                     <li>
-                        <a href='/'>
+                        <a href='https://www.linkedin.com/in/nuelkaiser/'>
                             Linkedin
                         </a>
                     </li>
 
                     <li>
-                        <a href='/'>
+                        <a href='https://medium.com/@majekodunmiimmanuel9'>
                             Medium
                         </a>
                     </li>
