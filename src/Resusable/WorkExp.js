@@ -7,10 +7,7 @@ AOS.init();
 const WorkExp = ({ Orange, work }) => {
     return (
         <div className='exp-container'  data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="6000" >
-            <div className='selected-inner'>
-                <img src={Orange} alt='Orange dot' />
-                Work Experience
-            </div>
+          
 
 
             <div className='date-header'>

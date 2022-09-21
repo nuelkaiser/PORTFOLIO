@@ -33,12 +33,6 @@ const Talk = () => {
     return (
         <div className='talk-container' id="talk">
             <div className='talk-inner'>
-        
-                <div className='inner-talkset'>
-                    <h2>
-                        Immanuel Majekodunmi
-                    </h2>
-                </div>
 
                 <div className='form-container'>
                     <h1>Let's Talk</h1>

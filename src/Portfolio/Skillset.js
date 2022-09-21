@@ -9,7 +9,7 @@ import WhiteFill from '../Images/White-Fill.svg';
 
 function Skillset() {
 
-  
+
     const workExper = [
         {
             id: 1,
@@ -24,9 +24,9 @@ function Skillset() {
                     third: `wrote and edited web page content and other producing content.`,
                 }
             ],
-           },
+        },
 
-           {
+        {
             id: 2,
             where: 'Zuri',
             year: '2021',
@@ -34,24 +34,19 @@ function Skillset() {
             collaborated with other developer.`,
             role: [
                 {
-                    first:`Built responsive webpages`,
-                    second:`Maintained understanding of current web technologies and programming practices through continual education, reading and particpating in groups and
+                    first: `Built responsive webpages`,
+                    second: `Maintained understanding of current web technologies and programming practices through continual education, reading and particpating in groups and
                     workshops`
                 }
             ],
-           },
+        },
 
 
-        ]
+    ]
 
     return (
         <div className='skillset-container'>
             <div className='inner-inner'>
-                <div className='inner-skillset'>
-                    <h2>
-                        Immanuel Majekodunmi
-                    </h2>
-                </div>
 
                 <div className='exper-bar-container'>
                     <div className='exper-bar'>
@@ -61,8 +56,6 @@ function Skillset() {
                             <img src={Orange} alt='Orange dot' />
                             My skillset
                         </div>
-
-                        <h4 className='skiller'>Skillset</h4>
 
                         <h4 className='lang'>Languages & framework</h4>
 
@@ -84,12 +77,17 @@ function Skillset() {
                     </div>
 
                     <div className='detailed-bar'>
-                        
-                       {
-                         workExper.map(
-                            (work) => <WorkExp work={work} Orange={Orange} key={work.id}/>    
-                        )
-                       }
+
+                        <div className='selected-inner'>
+                            <img src={Orange} alt='Orange dot' />
+                            Work Experience
+                        </div>
+
+                        {
+                            workExper.map(
+                                (work) => <WorkExp work={work} Orange={Orange} key={work.id} />
+                            )
+                        }
 
 
 

@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.img-cont {
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.img {
+    width: 40vw;
+}
+
 .pro {
     display: flex;
     align-items: center;
@@ -57,9 +67,8 @@
 }
 
 @media (max-width: 1024px) {
-    .pro > img,
-    .inverse-pro > img {
-        width: 335px;
+    .img {
+        width: 35vw;
     }
 }
  
@@ -89,6 +98,10 @@
 
     .proj-btn-container {
         justify-content: center;
+    }
+
+    .img {
+        width: 50vw;
     }
 }
 

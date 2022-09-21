@@ -1,6 +1,9 @@
 import React from 'react';
 import Orange from '../Images/Orange-GTP.svg';
-import Proi from '../Images/Project-Pics.svg';
+import Eazy from '../Images/Eazy Money.png';
+import Manage from '../Images/Manage.png';
+import Country from '../Images/Country API.png';
+import Todo from '../Images/Todo.png';
 import Chain from '../Images/Chain-Pic.svg';
 import Github from '../Images/Github-Pic.svg';
 import White from '../Images/White-Sec.svg';
@@ -20,7 +23,7 @@ function Works() {
 
         {
             id: 0,
-            img: Proi,
+            img: Country,
             text: `An application that fetches data of a list of countries and renders out the list with thier distinctive details,
                    enables you to search for different countries, view them and filter them by thier regions using a drop down menu.
                    Also implemented with a light theme and dark theme feature.`,
@@ -35,7 +38,7 @@ function Works() {
 
         {
             id: 1,
-            img: Proi,
+            img: Todo,
             text: `A todo list application that enables you to create and delete todos, 
                    tick the completeed todos and filter based on completed 
                    and uncompleted todos. Also implemented with a light theme and dark theme feature.`,
@@ -51,7 +54,7 @@ function Works() {
 
         {
             id: 2,
-            img: Proi,
+            img: Eazy,
             text: `A static landing Page for a next generation digital banking application (Easy Bank), 
                    built to perfection, fit mobile screen sizes, and very responsive.`,
             title: 'Eazy Bank',
@@ -65,7 +68,7 @@ function Works() {
 
         {
             id: 3,
-            img: Proi,
+            img: Manage,
             text: `A static landing Page of a next generation application (MANAGE), used for collaboration. 
             Built to perfection, fit mobile screen sizes, and very responsive.`,
             title: 'MANAGE',
@@ -86,9 +89,6 @@ function Works() {
         <div className='work-container'>
             <div className='work-work'>
                 <div className='inner-work'>
-                    <h2>
-                        Immanuel Majekodunmi
-                    </h2>
 
                     <div className='btn-work-container' data-aos="zoom-out-down">
                         <Link className='btn-work' to="talk" spy={true} smooth={true} offset={50} duration={500} >
