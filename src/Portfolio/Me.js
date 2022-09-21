@@ -101,7 +101,7 @@ function Me() {
                                     Let's Talk
                                 </Link>
 
-                                <a href={MyResume} download='MyResume' target='_blank' rel='noreferrer'>
+                                <a href={MyResume} >
                                     <button className='btn-2'>
                                         My  Resume
                                     </button>
