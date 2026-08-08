@@ -9,7 +9,12 @@ const contacts = [
   { label: "Email", value: site.email, href: `mailto:${site.email}` },
   { label: "LinkedIn", value: "linkedin.com/in/nuelkaiser", href: site.linkedin },
   { label: "GitHub", value: "github.com/nuelkaiser", href: site.github },
-  { label: "Phone", value: site.phone, href: `tel:${site.phone.replace(/-/g, "")}` },
+  {
+    label: "Resume",
+    value: "Download PDF",
+    href: site.resume,
+    download: true,
+  },
 ] as const;
 
 export function Contact() {
@@ -38,8 +43,17 @@ export function Contact() {
             >
               <a
                 href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                target={
+                  item.href.startsWith("http") || "download" in item
+                    ? "_blank"
+                    : undefined
+                }
+                rel={
+                  item.href.startsWith("http") || "download" in item
+                    ? "noopener noreferrer"
+                    : undefined
+                }
+                download={"download" in item ? "Immanuel-resume.pdf" : undefined}
                 className="group flex flex-col gap-1 py-6 md:flex-row md:items-baseline md:justify-between md:gap-8 md:py-7"
               >
                 <span className="text-[0.7rem] uppercase tracking-[0.16em] text-muted">

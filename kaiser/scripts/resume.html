@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Majekodunmi Immanuel — Resume</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0.55in;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.35;
+        color: #111;
+      }
+      h1 {
+        margin: 0 0 2px;
+        font-size: 20pt;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .role {
+        margin: 0 0 6px;
+        font-size: 11pt;
+        color: #333;
+      }
+      .meta {
+        margin: 0 0 14px;
+        font-size: 9.5pt;
+        color: #333;
+      }
+      h2 {
+        margin: 12px 0 6px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #222;
+        font-size: 11pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 8px;
+      }
+      .row strong {
+        font-size: 10.5pt;
+      }
+      .muted {
+        color: #444;
+        font-size: 9.5pt;
+      }
+      ul {
+        margin: 4px 0 0;
+        padding-left: 16px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
+      .skills p {
+        margin: 3px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Majekodunmi Immanuel</h1>
+    <p class="role">Software Engineer</p>
+    <p class="meta">
+      234-701-519-9698 | majekodunmiimmanuel9@gmail.com |
+      linkedin.com/in/nuelkaiser | github.com/nuelkaiser | Lagos, Nigeria
+    </p>
+
+    <h2>Education</h2>
+    <div class="row">
+      <div>
+        <strong>University of Lagos</strong>
+        <div class="muted">Bachelor of Science in Engineering (BSc), Computer Engineering</div>
+      </div>
+      <div class="muted" style="text-align: right">
+        Lagos, Nigeria<br />
+        2020 – 2027
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="row">
+      <div>
+        <strong>Frontend Engineer</strong>
+        <div class="muted">Abode</div>
+      </div>
+      <div class="muted" style="text-align: right">
+        Lagos, Nigeria<br />
+        Mar. 2026 – Present
+      </div>
+    </div>
+    <ul>
+      <li>
+        Built and maintained multiple Next.js + TypeScript products: consumer/realtor app, internal
+        admin, Academy webinar platform, UK roadshow landing, and marketing sites
+      </li>
+      <li>
+        Shipped Abode Academy end-to-end: multi-step registration, Supabase-backed admin dashboards,
+        QR check-in, Google Meet access gating, and lifecycle email automation
+      </li>
+      <li>
+        Developed admin modules for assets, users, transactions, agencies, commissions, and campaigns
+        using GraphQL Codegen, React Query, and Zustand
+      </li>
+      <li>
+        Contributed to migrating the consumer frontend from GraphQL to typed REST (Axios + Zod + React
+        Query), including role-aware buyer vs. realtor routing
+      </li>
+      <li>
+        Implemented ops tooling: CSV/Excel exports, registrant reporting, certificate generation
+        (Puppeteer), and WhatsApp/email reminder workflows
+      </li>
+      <li>
+        Instrumented applications with Sentry and PostHog for error tracking and product analytics
+      </li>
+    </ul>
+
+    <div class="row">
+      <div>
+        <strong>Frontend Engineer</strong>
+        <div class="muted">City Spaces and Bookings</div>
+      </div>
+      <div class="muted" style="text-align: right">
+        Lagos, Nigeria<br />
+        Jan. 2023 – Present
+      </div>
+    </div>
+    <ul>
+      <li>
+        Built customer marketplace features in Next.js 14 + TypeScript: SSR home/search/hotel/location
+        pages and end-to-end booking checkout (create, modify, cancel, early checkout)
+      </li>
+      <li>
+        Implemented search and listings UX with Google Maps/Places split views and list
+        virtualization for large result sets
+      </li>
+      <li>
+        Integrated Paystack payments and payment-authorization flows for guest checkout and saved
+        charge methods
+      </li>
+      <li>
+        Delivered multi-step host onboarding and listing management, plus hotel operator surfaces for
+        rooms, earnings, and staff
+      </li>
+      <li>
+        Integrated hybrid REST (Axios) and GraphQL (Apollo) clients for apartments, bookings, and
+        campaign placements
+      </li>
+      <li>
+        Developed the CSB admin console (Next.js App Router): bookings/transactions, campaigns, geo
+        CMS, and permission-gated navigation
+      </li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <p style="margin: 6px 0 0">
+      <strong>AWS Certified Cloud Practitioner</strong><br />
+      <span class="muted"
+        >Core services, pricing, and best practices; hands-on practice with S3 and EC2</span
+      >
+    </p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <p><strong>Languages:</strong> TypeScript, JavaScript, HTML, CSS/Sass</p>
+      <p>
+        <strong>Frontend:</strong> React, Next.js, Tailwind CSS, shadcn/Radix, MUI, Framer Motion
+      </p>
+      <p>
+        <strong>State &amp; Data:</strong> Redux Toolkit, React Query, Zustand, Apollo Client, Axios,
+        Zod
+      </p>
+      <p>
+        <strong>Backend-adjacent:</strong> REST &amp; GraphQL clients, Supabase (Auth + DB), Next.js
+        API routes
+      </p>
+      <p><strong>Payments &amp; Media:</strong> Paystack, Cloudinary, Puppeteer / PDF tooling</p>
+      <p>
+        <strong>Quality &amp; Ops:</strong> Git, Jest, Sentry, PostHog, Vercel, Husky / commitlint
+      </p>
+      <p><strong>Cloud &amp; Collab:</strong> AWS, Figma, Jira, Slack</p>
+    </div>
+  </body>
+</html>

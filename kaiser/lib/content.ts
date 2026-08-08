@@ -6,7 +6,7 @@ export const site = {
     "I design and ship precise product interfaces — marketplaces, admin systems, and growth platforms.",
   bio: "Software engineer based in Lagos. I shape brands through interaction: building Next.js products end-to-end, from consumer marketplaces and booking flows to academy platforms and internal ops tooling. Craft, systems, and performance in equal measure.",
   email: "majekodunmiimmanuel9@gmail.com",
-  phone: "+234-701-519-9698",
+  resume: "/Immanuel-resume.pdf",
   linkedin: "https://linkedin.com/in/nuelkaiser",
   github: "https://github.com/nuelkaiser",
 } as const;
@@ -75,7 +75,7 @@ export const experience: Experience[] = [
   {
     company: "Abode",
     role: "Frontend Engineer",
-    period: "Feb 2026 — Present",
+    period: "Mar 2026 — Present",
     location: "Lagos",
   },
   {
